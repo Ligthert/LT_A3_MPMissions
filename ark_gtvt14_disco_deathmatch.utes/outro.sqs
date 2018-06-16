@@ -1,0 +1,36 @@
+;CLY DM Template for easy and fun deathmatch creation
+;
+;This is the outro script.
+;
+;Executed in end.sqs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+CLY_cutscene=true
+
+;Music
+[] spawn {0 fademusic 0.5;playMusic "Track16";sleep 6;5.5 fademusic 0}
+
+;Game over text
+_gameovertext="Time limit reached!"
+?CLY_scorelimitreached:_gameovertext="Score limit reached!"
+titleText [_gameovertext,"PLAIN",1]
+
+titleCut ["","BLACK OUT",1]
+~1
+titleCut ["","BLACK FADED",100]
+
+;Create camera without cinematic borders
+_camera="Camera" camCreate getPos player
+_camera cameraEffect ["INTERNAL","BACK"]
+showCinemaBorder false
+
+
+
+;---Camera---
+8 fadeSound 0
+~8.5
+;///Camera///
+
+setApertureNew [0, 0, 0, 0]
+
+endMission "END1"

@@ -1,0 +1,61 @@
+;CLY DM Template for easy and fun deathmatch creation
+;
+;This is the intro script.
+;
+;Executed in init.sqs
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+?!isNil "CLY_timelimitreached" and !isNil "CLY_scorelimitreached":if (CLY_timelimitreached or CLY_scorelimitreached) then {exit}
+?!CLY_showintro:goto "skipintro"
+
+setApertureNew [1, 1, 1, .9]
+
+CLY_cutscene=true
+CLY_preloadfinished=false
+onPreloadFinished {CLY_preloadfinished=true}
+
+
+
+;Create camera without cinematic borders
+_camera="Camera" camCreate [0,0,0]
+_camera cameraEffect ["INTERNAL","BACK"]
+showCinemaBorder false
+
+;Initial camera
+;=== 15:05:15
+_camera camPrepareTarget [-73488.13,-52753.09,-28357.86]
+_camera camPreparePos [4076.87,3620.53,8.15]
+_camera camPrepareFOV 0.700
+_camera camCommitPrepared 0
+
+@preloadCamera markerPos "respawn_civilian"
+@CLY_preloadfinished or time>7
+
+cutText ["","BLACK IN",1]
+titleRsc ["intro1","PLAIN",1]
+1 fadeSound 1
+
+
+
+;---Camera---
+~3
+titleRsc ["intro2","PLAIN",1]
+~4
+[1] spawn blackfade
+;///Camera///
+
+
+
+~1
+player cameraEffect ["TERMINATE","BACK"]
+camDestroy _camera
+CLY_cutscene=false
+1 fadeSound 1
+exit
+
+#skipintro
+CLY_cutscene=false
+~0.1
+cutText ["","BLACK IN",1]
+1 fadeSound 1
+exit

@@ -1,0 +1,1 @@
+null = execVM "halo_init.sqf";

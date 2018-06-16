@@ -1,0 +1,80 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 2;
+ maxPlayers = 20;
+};
+
+respawn = 1;
+respawnDialog = false;
+disabledAI = 1;
+ShowGPS = 1;
+showCompass	= 1;
+showWatch	= 1;
+aiKills		= 0;
+debriefing	= 1;
+author = "Sacha Ligthert";
+onLoadName = "[LT-PD] Civil Defence (v5)";
+onLoadMission = "Zargabad has Fallen! We must prevent the enemy from taking over our city!";
+loadScreen = "\lt_template_base\logos\lowtac-banner.paa";
+overviewPicture = "\lt_template_base\logos\lowtac-banner.paa";
+enableDebugConsole = 1;
+respawnOnStart = -1;
+
+class CfgSounds
+{
+	sounds[] = {};
+	class akbar1
+	{
+		name = "akbar1";
+		sound[] = {akbar1.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	class akbar2
+	{
+		name = "akbar2";
+		sound[] = {akbar2.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	class akbar3
+	{
+		name = "akbar3";
+		sound[] = {akbar3.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	class akbar4
+	{
+		name = "akbar4";
+		sound[] = {akbar4.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	class akbar5
+	{
+		name = "akbar5";
+		sound[] = {akbar5.ogg, 1, 1.0};
+		titles[] = {};
+	};
+	class akbar6
+	{
+		name = "akbar6";
+		sound[] = {akbar6.ogg, 1, 1.0};
+		titles[] = {};
+	};
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Wij will reinstate the caliphate!";
+		subtitle = "You made Allah proad!";
+		description = "72+ goat virgins for you!";
+	};
+
+	class End2
+	{
+		title = "You have failed Allah";
+		subtitle = "No heaven for you.";
+		description = "No 72 goats!";
+	};
+};

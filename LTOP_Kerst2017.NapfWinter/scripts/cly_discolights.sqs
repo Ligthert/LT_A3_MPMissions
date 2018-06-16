@@ -1,0 +1,46 @@
+_lightarray=[]
+
+_brightness=0.175
+_ambient=[1,1,1]
+_color=[1,1,1]
+
+_posx=[-6.015,0.035,6.085]
+_posy=[-18.53,-8.69,1.63,11.96,21.8]
+_posz=0.7
+
+_hangar=hangarwest
+
+_xselect=0
+_yselect=0
+
+#lightcreateloop
+_light="#lightpoint" createVehicleLocal [0,0,0]
+_light setLightBrightness _brightness
+_light setLightColor _color
+_light setLightAmbient _ambient
+_light lightAttachObject [_hangar,[_posx select _xselect,_posy select _yselect,_posz]]
+_lightarray=_lightarray+[_light]
+
+_xselect=_xselect+1
+?_xselect>2:_xselect=0;_yselect=_yselect+1
+?_yselect>4 and _hangar==hangareast:goto "lightcreatedone"
+?_yselect>4:_yselect=0;_hangar=hangareast
+goto "lightcreateloop"
+#lightcreatedone
+
+_lightselect=0
+#randomcolorloop
+;_color=[((round random 1)*2)*0.5,((round random 1)*2)*0.5,((round random 1)*2)*0.5]
+_color=[round random 1,round random 1,round random 1]
+_ambient=_color
+(_lightarray select _lightselect) setLightColor _color
+(_lightarray select _lightselect) setLightAmbient _ambient
+
+_lightselect=_lightselect+1
+?_lightselect<count _lightarray:goto "randomcolorloop"
+
+_wait=0.5
+
+~_wait
+_lightselect=0
+goto "randomcolorloop"

@@ -1,0 +1,807 @@
+version=52;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=67;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
+	};
+	class Camera
+	{
+		pos[]={20193.635,3020.9441,6304.6953};
+		dir[]={0.33660245,-0.29534513,0.89426303};
+		up[]={0.10404658,0.95538354,0.27642724};
+		aside[]={0.93601257,-1.013701e-006,-0.35231864};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"NLD_Units_Infantry",
+	"CUP_Creatures_Military_BAF",
+	"CUP_Creatures_Military_USMC",
+	"cup_misc_e_config",
+	"CUP_AirVehicles_C130J"
+};
+randomSeed=6446443;
+class ScenarioData
+{
+	author="Ligthert";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.44999999;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastFog=0.1;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2014;
+		day=14;
+		hour=10;
+		minute=0;
+		startFogBase=1;
+		forecastFogBase=1;
+		startFogDecay=0.039999999;
+		forecastFogDecay=0.039999999;
+	};
+	class Entities
+	{
+		items=15;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19739.969,13.811332,22115.383};
+						angles[]={0,1.4694595,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=1;
+					type="NLD_MTP_Operator";
+					atlOffset=2.8610229e-006;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=0;
+			atlOffset=2.8610229e-006;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19698.551,2962.8467,797.88196};
+						angles[]={6.2777395,5.1584253,6.2777395};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=59;
+					type="CUP_B_BAF_Pilot_WDL";
+					atlOffset=3000;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19698.551,2962.8467,797.88196};
+						angles[]={6.2777395,5.1584253,6.2777395};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=60;
+					type="CUP_B_BAF_Pilot_WDL";
+					atlOffset=3000;
+				};
+				class Item2
+				{
+					dataType="Waypoint";
+					position[]={-187.884,-14.91367,9691.3359};
+					combatMode="BLUE";
+					speed="LIMITED";
+					combat="CARELESS";
+					expActiv="truck1 flyInHeight 3000";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=6;
+					type="Move";
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={20178.338,-39.71529,617.55902};
+					type="Cycle";
+					expActiv="truck1 flyInHeight 3000";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=7;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=59;
+						item1=58;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=60;
+						item1=58;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=2;
+			atlOffset=3000;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Cargo Truck #1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19837.561,2999.9956,3634.668};
+						angles[]={0,5.1584253,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=62;
+					type="CUP_B_BAF_Pilot_WDL";
+					atlOffset=3037.396;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={19837.561,2999.9956,3634.668};
+						angles[]={0,5.1584253,0};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=63;
+					type="CUP_B_BAF_Pilot_WDL";
+					atlOffset=3037.396;
+				};
+				class Item2
+				{
+					dataType="Waypoint";
+					position[]={-45.068001,5.5750008,13334.145};
+					combatMode="BLUE";
+					speed="LIMITED";
+					expActiv="truck2 flyInHeight 3000";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=17;
+					type="Move";
+					atlOffset=38.205002;
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={20317.375,-2.9474487,3454.427};
+					type="Cycle";
+					expActiv="truck2 flyInHeight 3000";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=18;
+					atlOffset=37.370998;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=62;
+						item1=61;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=63;
+						item1=61;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=14;
+			atlOffset=3037.396;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Cargo Truck #2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20207.383,2999.9714,6706.7817};
+						angles[]={0,5.1584253,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+					};
+					id=65;
+					type="CUP_B_USMC_Pilot";
+					atlOffset=3061.21;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={20207.383,2999.9714,6706.7817};
+						angles[]={0,5.1584253,0};
+					};
+					side="West";
+					class Attributes
+					{
+					};
+					id=66;
+					type="CUP_B_USMC_Pilot";
+					atlOffset=3061.21;
+				};
+				class Item2
+				{
+					dataType="Waypoint";
+					position[]={296.26599,30.615791,17088.813};
+					combatMode="BLUE";
+					speed="LIMITED";
+					expActiv="truck3 flyInHeight 3000";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=23;
+					type="Move";
+					atlOffset=60.028;
+				};
+				class Item3
+				{
+					dataType="Waypoint";
+					position[]={20687.457,-14.734478,6526.563};
+					type="Cycle";
+					expActiv="truck3 flyInHeight 3000";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+					id=24;
+					atlOffset=61.231007;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=65;
+						item1=64;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=66;
+						item1=64;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=20;
+			atlOffset=3061.21;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Cargo Truck #3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item4
+		{
+			dataType="Trigger";
+			position[]={20499.287,-33.702862,680.48804};
+			class Attributes
+			{
+				condition="alive truck1";
+				onActivation="truck1 setFuel 1";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1800,1800,1800};
+			};
+			id=26;
+			type="EmptyDetector";
+			atlOffset=0.57936478;
+		};
+		class Item5
+		{
+			dataType="Trigger";
+			position[]={20634.072,-42.18787,3329.0239};
+			class Attributes
+			{
+				condition="alive truck2";
+				onActivation="truck2 setFuel 1";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1800,1800,1800};
+			};
+			id=27;
+			type="EmptyDetector";
+			atlOffset=0.56700134;
+		};
+		class Item6
+		{
+			dataType="Trigger";
+			position[]={20971.039,-73.78656,6442.5698};
+			class Attributes
+			{
+				condition="alive truck3";
+				onActivation="truck3 setFuel 1";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={1800,1800,1800};
+			};
+			id=28;
+			type="EmptyDetector";
+			atlOffset=0.58800507;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19752.391,18.815804,22127.447};
+				angles[]={0,0.56672102,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this addAction [""Get in southern plane"",{ player moveInCargo truck1}];";
+			};
+			id=35;
+			type="FlagCarrierNATO_EP1";
+			atlOffset=9.5367432e-007;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19751.029,17.809219,22120.623};
+				angles[]={0,0.56672102,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this addAction [""Get in center plane"",{ player moveInCargo truck2}];";
+			};
+			id=36;
+			type="FlagCarrierNATO_EP1";
+			atlOffset=1.2608032;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19752.832,16.89777,22112.248};
+				angles[]={0,0.56672102,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				init="this addAction [""Get in northern plane"",{ player moveInCargo truck3}];";
+			};
+			id=37;
+			type="FlagCarrierNATO_EP1";
+			atlOffset=0.77150154;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={19500.311,0,22029.227};
+			name="base";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=500;
+			b=500;
+			id=38;
+			atlOffset=-0.32628417;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={10266.927,94.317383,10370.772};
+			name="ao";
+			markerType="RECTANGLE";
+			type="rectangle";
+			a=10000;
+			b=10000;
+			id=39;
+			atlOffset=-19.894325;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19698.582,2968.5042,797.82513};
+				angles[]={6.2777395,5.1584253,6.2777395};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				init="this flyInHeight 3000";
+				name="truck1";
+			};
+			id=58;
+			type="CUP_B_C130J_GB";
+			atlOffset=3000;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""Medikit""],[20,5]],[[],[]],[[],[]],[[""B_Parachute""],[28]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={19837.623,3005.6523,3634.6934};
+				angles[]={0,5.1584253,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				init="this flyInHeight 3000";
+				name="truck2";
+			};
+			id=61;
+			type="CUP_B_C130J_GB";
+			atlOffset=3037.396;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""Medikit""],[20,5]],[[],[]],[[],[]],[[""B_Parachute""],[28]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20207.701,3005.6194,6706.8276};
+				angles[]={0,5.1584253,0};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				init="this flyInHeight 3000";
+				name="truck3";
+			};
+			id=64;
+			type="CUP_B_C130J_USMC";
+			atlOffset=3061.21;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit"",""Medikit""],[20,5]],[[],[]],[[],[]],[[""B_Parachute""],[28]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+	};
+};

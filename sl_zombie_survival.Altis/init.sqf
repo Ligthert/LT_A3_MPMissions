@@ -1,0 +1,1 @@
+diag_log "+++++ Starting Zombie Survival +++++";

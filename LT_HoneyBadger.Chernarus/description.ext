@@ -1,0 +1,28 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 2;
+ maxPlayers = 10;
+};
+
+respawn = "BASE";
+respawnDelay = 0;
+respawnDialog = false;
+disabledAI = 1;
+ShowGPS = 0;
+showCompass	= 1;
+showWatch	= 1;
+aiKills		= 0;
+debriefing	= 1;
+author = "Sacha Ligthert";
+onLoadName = "Operation HoneyBadger deel 1";
+onLoadMission = "Bevrijd Chernarus. Kies je eigen objective of volg de objective van de HQ";
+loadScreen = "lowtac.paa";
+
+enableDebugConsole = 1;
+
+class Extended_Init_EventHandlers {
+ class Air {
+  init = "_this call (compile preprocessFileLineNumbers 'addAction.sqf')";
+ };
+};

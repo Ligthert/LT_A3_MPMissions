@@ -1,0 +1,299 @@
+// Lowlands Tactical 3rd Generation Mission Template: description.ext
+// For usage see:
+// Reference: https://community.bistudio.com/wiki/Description.ext
+
+// PARAMETERS
+// Generic mission parameters to increase replayability
+class Params
+{
+
+	class lt_param_timer
+	{
+		title = "Mission safety timer (minutes)";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
+		texts[] = {"No timer","1","2","3","4","5","6","7","8","9","10","15"};
+		default = 10;
+		code = "lt_param_mission_timer = %1";
+	};
+
+	class lt_param_weather
+	{
+		title = "Weather";
+		values[] = {0,1,2,3,4,5,6,7,8,9};
+		texts[] = {"Clear (Calm)","Clear (Light Winds)","Clear (Strong Winds)","Overcast (Calm)","Overcast (Light Winds)","Overcast (Strong Winds)","Rain (Light Winds)","Rain (Strong Winds)","Storm","Use mission settings"};
+		default = 9;
+		function = "LT_fnc_setWeather";		// This function is called to apply the values
+		isGlobal = 0;				// Execute this only on the server
+		code = "lt_param_weather = %1";
+	};
+
+	class lt_param_fog
+	{
+		title = "Fog";
+		values[] = {0,1,2,4};
+		texts[] = {"None","Light","Heavy","Use mission settings"};
+		default = 4;
+		function = "LT_fnc_SetFog";	// This function is called to apply the values
+		isGlobal = 0;			// Execute this only on the server
+		code = "lt_param_fog = %1";
+	};
+
+	class lt_param_timeOfDay
+	{
+		title = "Time of Day";
+		values[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
+		texts[] = {"0:00","1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","Use mission settings"};
+		default = 24;
+		function = "LT_fnc_setTime";	// This function is called to apply the values
+		isGlobal = 0;			// Execute this only on the server
+		code = "lt_param_timeOfDay = %1";
+	};
+	class lt_nvg_onoff
+	{
+		title = "Units have NVG's";
+		values[] = {0,1};
+		texts[] = {"No", "Yes"};
+		default = 0;
+	};
+	class lt_fatigue_onoff
+	{
+		title = "Fatigue";
+		values[] = {0,1};
+		texts[] = {"No","Yes"};
+		default = 0;
+	}
+};
+
+
+// DEBRIEFINGS
+// Default mission debriefings
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Wij hebben het gehaald!";
+		subtitle = "Nou ja.. soort van...";
+		description = "Ik hoop dat jullie het leuk vonden. Tot volgend jaar! :)";
+		pictureBackground = "skins\sign_hot_single_waifus.paa";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "Partial Success";
+		subtitle = "We answered the Call of Duty!";
+		description = "And you nearly got it right. Back to Minecraft?";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End3
+	{
+		title = "Mission Failure";
+		subtitle = "We have botched this job.";
+		description = "Better luck next time!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End4
+	{
+		title = "BLUFOR wins!";
+		subtitle = "Good job being total badasses BLUFOR!";
+		description = "You can laugh at everyone else now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End5
+	{
+		title = "REDFOR wins!";
+		subtitle = "Good job being total badasses REDFOR!";
+		description = "You can laugh at everyone else now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End6
+	{
+		title = "GREENFOR wins!";
+		subtitle = "Good job being total badasses GREENFOR!";
+		description = "You can laugh at everyone else now.";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+};
+
+
+// Basic Properties
+disableChannels[] = {0,2,4,5,6};
+enableItemsDropping = 0;
+allowFunctionsRecompile = 1;
+respawnOnStart = -1;
+
+// Custom camo's
+class CfgCamouflage {
+	//Add your own custom classes of camouflage as shown below:
+	/*
+	class LT_test_class1
+	{
+		text = "Guerilla";
+		data =  ["CUP_U_I_GUE_Anorak_03","V_Chestrig_blk","CUP_B_HikingPack_Civ","CUP_H_PMC_PRR_Headset","lt_tfr_dst"];
+	};
+	*/
+};
+
+class CfgSounds
+{
+  sounds[] = { alarm, cky, dm, ds, son, expozie, bariera_1, bariera_2, bariera_3, bariera_4, bariera_5, meteor_1, earthquakes, spark1, spark11, spark2, spark22, spark3, spark4, spark5, sound_twin, metalic1, metalic2, metalic3, metalic4, metalic5, metalic6, metalic7 };
+  class alarm { name="alarm"; sound[] = {"Sound\alarm.ogg", 1, 1, 200}; titles[] = {0,""}; };
+  class cky { name = "cky"; sound[] = {"music\cky.ogg", 1, 1, 300}; titles[] = {0,""}; };
+  class dm { name = "dm"; sound[] = {"music\dm.ogg", 1, 1, 300}; titles[] = {0,""}; };
+  class ds { name = "ds"; sound[] = {"music\ds.ogg", 1, 1, 300}; titles[] = {0,""}; };
+  class son { name = "son"; sound[] = {"music\son.ogg", 1, 1, 300}; titles[] = {0,""}; };
+  class frenchcore { name = "frenchcore"; sound[] = {"music\frenchcore.ogg", 1, 1, 100}; titles[] = {0,""}; };
+  class expozie { name = "expozie"; sound[] = {\sound\expozie.ogg, db+30, 1.0}; titles[] = {0, ""}; };
+  class bariera_1 { name = "bariera_1"; sound[] = {\sound\bariera_1.ogg, db+35, 1.0}; titles[] = {0, ""}; };
+  class bariera_2 { name = "bariera_2"; sound[] = {\sound\bariera_2.ogg, db+35, 1.0}; titles[] = {0, ""}; };
+  class bariera_3 { name = "bariera_3"; sound[] = {\sound\bariera_3.ogg, db+35, 1.0}; titles[] = {0, ""}; };
+  class bariera_4 { name = "bariera_4"; sound[] = {\sound\bariera_4.ogg, db+35, 1.0}; titles[] = {0, ""}; };
+  class bariera_5 { name = "bariera_5"; sound[] = {\sound\bariera_5.ogg, db+45, 1.0}; titles[] = {0, ""}; };
+  class meteor_1 { name = "meteor_1"; sound[] = {\sound\meteor_1.ogg, db+20, 1.0}; titles[] = {0, ""}; };
+  class earthquakes { name = "earthquakes"; sound[] = {\sound\earthquakes.ogg, 1, 1.0}; titles[] = {0, ""}; };
+  class spark1 { name = "spark1"; sound[] = {"\sound\spark1.ogg", db+30, 1}; titles[] = {}; };
+  class spark11 { name = "spark11"; sound[] = {"\sound\spark11.ogg", db+30, 1}; titles[] = {}; };
+  class spark2 { name = "spark2"; sound[] = {"\sound\spark2.ogg", db+30, 1}; titles[] = {}; };
+  class spark22 { name = "spark22"; sound[] = {"\sound\spark22.ogg", db+30, 1}; titles[] = {}; };
+  class spark3 { name = "spark3"; sound[] = {"\sound\spark3.ogg", db+30, 1}; titles[] = {}; };
+  class spark4 { name = "spark4"; sound[] = {"\sound\spark4.ogg", db+30, 1}; titles[] = {}; };
+  class spark5 { name = "spark5"; sound[] = {"\sound\spark5.ogg", db+30, 1}; titles[] = {}; };
+  class metalic1 { name = "metalic1"; sound[] = {"\sound\metalic1.ogg", db+25, 1}; titles[] = {}; };
+  class metalic2 { name = "metalic2"; sound[] = {"\sound\metalic2.ogg", db+25, 1}; titles[] = {}; };
+  class metalic3 { name = "metalic3"; sound[] = {"\sound\metalic3.ogg", db+35, 1}; titles[] = {}; };
+  class metalic4 { name = "metalic4"; sound[] = {"\sound\metalic4.ogg", db+35, 1}; titles[] = {}; };
+  class metalic5 { name = "metalic5"; sound[] = {"\sound\metalic5.ogg", db+20, 1}; titles[] = {}; };
+  class metalic6 { name = "metalic6"; sound[] = {"\sound\metalic6.ogg", db+30, 1}; titles[] = {}; };
+  class metalic7 { name = "metalic7"; sound[] = {"\sound\metalic7.ogg", db+30, 1}; titles[] = {}; };
+  class sound_twin { name = "sound_twin"; sound[] = {"\sound\sound_twin.ogg", 1, 1}; titles[] = {}; };
+  class vum { name = "vum"; sound[] = {"\sound\vum.ogg", db+10, 1}; titles[] = {}; };
+  class up_impact { name = "up_impact"; sound[] = {"\sound\up_impact.ogg", db+20, 1}; titles[] = {}; };
+  class ecou { name = "ecou"; sound[] = {"\sound\ecou.ogg", db+20, 1}; titles[] = {}; };
+  class oscilatie { name = "oscilatie"; sound[] = {"\sound\oscilatie.ogg", db+15, 1}; titles[] = {}; };
+  class eco_ray { name = "eco_ray"; sound[] = {"\sound\eco_ray.ogg", db+3, 1}; titles[] = {}; };
+};
+
+class CfgLeaflets
+{
+	class West { texture = "flyers\flyer1.paa"; text = "Blijf weg! Wij willen jullie hier niet en jullie zijn niet welkom. Tevens geloven wij niet eens in de kerstman!"; };
+  class East { texture = "flyers\flyer2.paa"; text = "Maar serieus, dit gaat voor niemand goed aflopen."; };
+  class Guer { texture = "flyers\flyer3.paa"; text = "Jullie weten niet wat jullie doen. Stop hier en ga terug voordat je iets creeerd wat je niet kan stoppen!"; };
+};
+
+class Extended_Init_EventHandlers {
+ class Man { init = "_this call (compile preprocessFileLineNumbers 'scripts\east_gear.sqf')"; };
+};
+
+class Extended_PreStart_EventHandlers
+{
+	class atlas_hitmarkers
+	{
+		init = "call compile preProcessFileLineNumbers 'atlas_hitmarkers\XEH_preStart.sqf'";
+	};
+};
+class Extended_PreInit_EventHandlers
+{
+	class atlas_hitmarkers
+	{
+		init = "call compile preProcessFileLineNumbers 'atlas_hitmarkers\XEH_preInit.sqf'";
+	};
+};
+class Extended_PostInit_EventHandlers
+{
+	class atlas_hitmarkers
+	{
+		init = "call compile preProcessFileLineNumbers 'atlas_hitmarkers\XEH_postInit.sqf'";
+	};
+};
+class Extended_HitPart_EventHandlers
+{
+	class CAManBase
+	{
+		class atlas_hitmarkers
+		{
+			hitPart = "_this spawn atlas_hitmarkers_fnc_onHit";
+		};
+	};
+};
+/*
+class Extended_Killed_EventHandlers {
+
+		class CAManBase
+	{
+		class atlas_killmarkers
+		{
+			killed = "_this spawn atlas_hitmarkers_fnc_onkill";
+		};
+	};
+};
+*/
+class RscTitles
+{
+	class atlas_Hitmarker
+	{
+		idd = -1;
+		movingEnable = 0;
+		enableSimulation = 1;
+		fadein = 0;
+		fadeout = 0.2;
+		duration = 0.2;
+		controlsBackground[] = {"CtrlHitmarker"};
+		controls[] = {};
+		class CtrlHitmarker
+		{
+			idc = -1;
+			type = 0;
+			style = 2096;
+			x = "safeZoneX + safeZoneW / 2 - 0.04";
+			y = "safeZoneY + safeZoneH / 2 - 0.04";
+			h = 0.08;
+			w = 0.08;
+			font = "RobotoCondensed";
+			sizeEx = 0;
+			colorBackground[] = {0,0,0,0};
+			colorText[] = {1,1,1,1};
+			text = "\a3\ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+		};
+	};
+	class atlas_killmarker
+		{
+		idd = -1;
+		movingEnable = 0;
+		enableSimulation = 1;
+		fadein = 0;
+		fadeout = 0.2;
+		duration = 0.2;
+		controlsBackground[] = {"CtrlHitmarker"};
+		controls[] = {};
+		class CtrlHitmarker
+		{
+			idc = -1;
+			type = 0;
+			style = 2096;
+			x = "safeZoneX + safeZoneW / 2 - 0.04";
+			y = "safeZoneY + safeZoneH / 2 - 0.04";
+			h = 0.08;
+			w = 0.08;
+			font = "RobotoCondensed";
+			sizeEx = 0;
+			colorBackground[] = {0,0,0,0};
+			colorText[] = {1,0,0,1};
+			text = "\a3\ui_f\data\IGUI\Cfg\Cursors\iconCursorSupport_ca.paa";
+		};
+	};
+};

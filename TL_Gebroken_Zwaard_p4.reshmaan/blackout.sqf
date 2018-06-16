@@ -1,0 +1,10 @@
+sleep 10;
+cutText["","BLACK",5,false];
+waitUntil { (getPos chop) select 2 < 10 };
+cutText["","BLACK IN",20,false];
+sleep 12;
+RCom sideChat "Hi! Welcome back! The good news is: You are still alive!";
+sleep 10;
+RCom sideChat "The bad news is: They know we are here. This mission is aborted!";
+sleep 10;
+RCom sideChat "Head to extraction North of your position. But be advised! It is swarming with enemy patrols...";

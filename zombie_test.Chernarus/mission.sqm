@@ -1,0 +1,457 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"aia_chernarus_config",
+		"ryanzombiesfunctions",
+		"ryanzombies"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"ryanzombies",
+		"ryanzombiesfunctions",
+		"aia_chernarus_config"
+	};
+	randomSeed=6666978;
+	class Intel
+	{
+		resistanceWest=0;
+		startWeather=1;
+		startFog=1;
+		startWind=0.099999994;
+		startLightnings=0.56;
+		startWaves=0.099999994;
+		forecastWeather=1;
+		forecastFog=1;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=1;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=0;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=11;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7121.3843,279.94495,7506.2666};
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="this unassignItem ""NVGoggles"";  this removeItem ""NVGoggles""; this removePrimaryWeaponItem ""acc_pointer_IR"";  this addItem ""acc_flashlight"";  this addPrimaryWeaponItem ""acc_flashlight"";";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7109.8477,293.99979,7692.0483};
+					id=1;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicthrow";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7040.4302,293.98999,7673.1929};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="Deletion";
+						};
+						class Item1
+						{
+							value="1500";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="DeletionRadius";
+						};
+						class Item2
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="DeletionDemons";
+						};
+						class Item3
+						{
+							value="1500";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="DeletionRadiusDemons";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleZombieDeletion";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7053.9351,293.98999,7676.894};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleZombieHealth";
+							typeName="ZombieMaxHealth";
+						};
+						class Item1
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleZombieHealth";
+							typeName="DemonMaxHealth";
+						};
+					};
+					id=3;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleZombieHealth";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7046.5737,293.98999,7674.875};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0.5";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="Infection";
+						};
+						class Item1
+						{
+							value="30";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="InfectionTimer";
+						};
+						class Item2
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="Uniform";
+						};
+					};
+					id=4;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleInfection";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7061.9106,293.98999,7678.2129};
+					class args
+					{
+						items=9;
+						class Item0
+						{
+							value="100";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="Amount";
+						};
+						class Item1
+						{
+							value="200";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="TotalAmount";
+						};
+						class Item2
+						{
+							value="5";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="Start";
+						};
+						class Item3
+						{
+							value="60";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="Frequency";
+						};
+						class Item4
+						{
+							value="0.4";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="Delay";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="Density";
+						};
+						class Item6
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="Activation";
+						};
+						class Item7
+						{
+							value="100";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="ActivationRadius";
+						};
+						class Item8
+						{
+							value="14";
+							parentCls="RyanZM_ModuleSpawner";
+							typeName="HordeSize";
+						};
+					};
+					id=5;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleSpawner";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7067.8467,293.98999,7679.2065};
+					id=6;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicspawnslow1opfor";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7077.3086,293.98999,7684.6123};
+					id=7;
+					side="LOGIC";
+					vehicle="Ryanzombieslimit";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7084.4531,293.98999,7686.1577};
+					id=8;
+					side="LOGIC";
+					vehicle="Ryanzombieslogiceasy";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7094.1094,293.98999,7689.2476};
+					id=9;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicroam";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7103.4756,293.9913,7691.6621};
+					id=10;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicthrowtank";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_chernarus_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_chernarus_config"
+	};
+	randomSeed=7106011;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_chernarus_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_chernarus_config"
+	};
+	randomSeed=7704861;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_chernarus_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_chernarus_config"
+	};
+	randomSeed=4476815;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

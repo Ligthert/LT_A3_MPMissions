@@ -1,0 +1,102 @@
+Korte termijn:
+[X] PO_* functies hernoemen naar SO_*
+[X] SO_fnc_createTaks uitbreiden zodat het alle parameters accepteerd
+[X] task_assassination afmaken
+  [X] Alle units en objecten die spawnen in een array zetten.
+  [X] SO_fnc_createTask volledig benutten
+  [X] Trigger maken met BIS_fnc_taskState(succeeded) en cleanup.sqf draait
+[X] task_destroy placeholder afmaken, copy/pasta van assassination
+[X] cleanup.sqf maken (param: array met units en objecten die wegkunnen) *depricated*
+[X] Functies maken om dingen (locatie zoeken, patrols maken) te automatiseren
+[ ] QRF
+[ ] Make use of ALiVE Compositions
+
+Bug/Feature lijst:
+[X] BIS_fnc_taskSetCurrent
+[X] Briefing.sqf
+[X] Patrols profile // _this setVariable ["ALIVE_profileIgnore", true]; use at your own risk
+[X] No TWS/NS
+[X] Antenna on base server-Only
+[X] UAV backpack RAUS
+[X] Titans go away! PCML Only
+[X] MarkerDel
+
+Lange termijn:
+[X] Voor meerdere spelers maken
+[/] QRF chopper (denk: Escape Chernarus/Altis)
+[X] Testen op dedicated server
+[/] Testen voor JIP
+[X] Ammo-crate/respawn_west maken // Kan ik uit insurgency halen
+[X] re/spawn parajump maken
+[X] Wat voertuigen beschikbaar hebben
+[X] Over gaan op ALiVE
+   [X] Populeren eiland
+   [X] Virtualiseren units
+
+Scenarios om te scripten:
+[X] Destroy a target (findLocation + in the open)
+- AA
+- Arty
+- Radar
+- Generator
+- Comms
+- Antenna
+- Storage trucks
+
+[X] Kill a person (findCity(CQB) + findLocation + in the open)
+- Defected AAF
+- CSAT JTAC
+- CSAT UAV operator
+- CSAT General?
+- Defected FIA
+- Defected NATO
+- Civilian spy
+
+[X] Snipe a person (Sniper) (findHill + in the open)
+- CSAT UAV Operater
+- CSAT Officer
+- Civilian person thingy
+
+## LOW PRIO ##
+[ ] Ambush convoy (findCity + findLocation)
+- Zoek twee locaties
+- Zorg dat de afstand groter is an 15-20KM
+- Plaatsing buiten het dorp en laten rijden
+- Twee triggers maken die kijkt of alles getrashed is of als alles aangekomen is.
+
+[X] Secure base
+-  Bunker complex ergens opzetten met ventjes erin.
+
+## LOW PRIO ##
+[ ] Secure person
+- Side objective of een mogelijkheid van Kill a person
+- Dezelfde CQB gebeuren als kill a person
+
+## LOW PRIO ##
+[ ] Steal object ( seen == auto-fail ?? )
+- Laptop
+- Sattelite phone
+
+## LOW PRIO ##
+[ ] Kidnap person (dit gaat nasty worden, ik weet eigenlijk niet of dit gaat)
+- Well, fuck this...
+
+
+[ ] Extract data and destroy UAV
+Status: Basic script is down. Now weave this into a MP friendly framework (of kill me now - this is going to be hard to debug)
+- Random location
+- UAV wreck neer flikkeren
+- Attack heli neer flikkeren
+- MV22 wreck neer flikkeren
+- Transport plane wreck neer flikkeren
+- UGV neerschieten
+- UAV neerschieten
+- Figther Plane wreck neer flikkeren
+- Extractie script maken
+- Aflever punt maken
+
+[ ] Covert-Ops
+- Destroy friendly UAV
+- Destroy friendly patrol boat
+- Kill civilians in foreign uniforms and with foreign weapons
+- Kill another group of players (because fuck them, one of them is a traitor)

@@ -1,0 +1,73 @@
+class Header
+{
+ gameType = TDM;
+ minPlayers = 1;
+ maxPlayers = 16;
+};
+
+respawn = "BIRD";
+respawnDelay = 5;
+respawnDialog = true;
+disabledAI = 1;
+ShowGPS = 1;
+showCompass	= 1;
+showWatch	= 1;
+aiKills		= 0;
+debriefing	= 1;
+loadScreen = "tangodown.paa";
+author = "Sacha Ligthert aka /dev/urandom [TDNL]";
+onLoadName = "Hostage Race";
+onLoadMission = "Two sides require the extraction of a double agent held hostage by resistance forces.";
+
+enableDebugConsole = 1;
+
+class Params
+{
+	class town_lights
+	{
+		title = "Town: Disable Streetlights";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"No","Yes"};
+	};
+	class environment_weather
+	{
+		title = "Environment: Weather (broken)";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"Clear skies","Dutch"};
+	};
+	class environment_time
+	{
+		title = "Environment: Time of day";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"Midnight","Afternoon"};
+	};
+	class environment_season
+	{
+		title = "Environment: Season";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"Summer","Winter"};
+	};
+	class resistance_patrols
+	{
+		title = "Resistance: Patrols";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"Yes","No"};
+	};
+	class resistance_multi
+	{
+		title = "Resistance: guards per player (multiplier)";
+		values[] = {0.5,1,1.5,2,2.5,3};
+		default = 1.5;
+	};
+	class resistance_size
+	{
+		title = "Resistance: Members per patrol (unimplemented)";
+		values[] = {1,2,3,4,5,6,7,8};
+		default = 5;
+	}
+};

@@ -1,0 +1,127 @@
+class Hull3 {
+    isEnabled = 0;
+};
+
+//CLY DM Template for easy and fun deathmatch creation
+//
+//description.ext is an error-prone file that defines important settings and resources.
+///////////////////////////////////////////////////////////////////////////////////////
+
+//You can write anything here, it shows up in the loading screen
+onLoadMission="DM Disco by Celery";
+
+//Deathmatches always use "BASE"
+respawn="BASE";
+
+//Respawn time in seconds
+respawnDelay=2;
+
+//Leave AI disabled, this template doesn't support them
+disabledAI=1;
+
+//Show scoreboard upon death
+respawnDialog=0;
+
+//Change max players according to how many player slots your mission has
+class Header
+{
+	gameType=DM;
+	minPlayers=2;
+	maxPlayers=14;
+};
+
+class Params
+{
+	class CLY_timelimit
+	{
+	title="Time limit:";
+	values[]={0,300,600,900,1200,1500,1800,2100,2400,2700,3000,3300,3600,5400,7200};
+	texts[]={"Unlimited","5 minutes","10 minutes","15 minutes","20 minutes","25 minutes","30 minutes","35 minutes","40 minutes","45 minutes","50 minutes","55 minutes","1 hour","1.5 hours","2 hours"};
+	default=600;
+	};
+
+	class CLY_scorelimit
+	{
+	title="Score limit:";
+	values[]={0,1,3,5,10,15,20,30,40,50,60,70,80,90,100,150,200,300,400,500,1000};
+	texts[]={"Unlimited","1 point","3 points","5 points","10 points","15 points","20 points","30 points","40 points","50 points","60 points","70 points","80 points","90 points","100 points","150 points","200 points","300 points","400 points","500 points","1000 points"};
+	default=0;
+	};
+
+	class CLY_weaponparam
+	{
+	title="Weapon:";
+	values[]={1};
+	texts[]={"Random"};
+	default=1;
+	};
+};
+
+class RscTitleText
+{
+	type=0;
+	idc=-1;
+	style=2;
+	colorBackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	font="Zeppelin32";
+	size=1;
+};
+
+class RscTitles
+{
+	titles[]={};
+
+	class intro1
+	{
+	  	idd=-1;
+	  	movingEnable=0;
+	  	duration=2;
+	  	fadein=0.5;
+	  	fadeout=0.5;
+	  	name="intro1";
+	  	controls[]={"title1"};
+	  	
+	  	class title1 : RscTitleText
+		{
+	  	  	text="cly.paa";
+			style=48;
+	  	  	sizeEx=0.15;
+			x=0.425;
+	  	  	y=0.5;
+	  	  	w=0.15;
+	  	  	h=0.188;
+		};
+	};
+
+	class intro2
+	{
+	  	idd=-1;
+	  	movingEnable=0;
+	  	duration=3;
+	  	fadein=1;
+	  	fadeout=1;
+	  	name="intro1";
+	  	controls[]={"title1","title2"};
+	  	
+	  	class title1 : RscTitleText
+		{
+	  	  	text="DEATHMATCH";
+	  	  	sizeEx=0.05;
+			x=0;
+	  	  	y=0.5;
+	  	  	w=1;
+	  	  	h=0.1;
+		};
+	  	class title2 : RscTitleText
+		{
+	  	  	text="Disco";
+			colorText[]={0.3,0.3,0.3,1};
+	  	  	sizeEx=0.1;
+			x=0;
+	  	  	y=0.56;
+	  	  	w=1;
+	  	  	h=0.2;
+		};
+	};
+};

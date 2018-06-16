@@ -1,0 +1,49 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 2;
+ maxPlayers = 20;
+};
+
+respawn = 1;
+respawnDialog = false;
+disabledAI = 1;
+ShowGPS = 1;
+showCompass	= 1;
+showWatch	= 1;
+aiKills		= 0;
+debriefing	= 1;
+author = "Sacha Ligthert";
+onLoadName = "Defend the Drillingrig";
+onLoadMission = "Iedereen heeft een boortoren, maar dit is die van ons.";
+loadScreen = "lowtac.paa";
+overviewPicture = "lowtac.paa";
+enableDebugConsole = 1;
+respawnTemplates[] = {"ace_spectator"};
+respawnOnStart = -1;
+
+#include "R3F_LOG\desc_include.h"
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "You are WINRAR!";
+		subtitle = "(use 7zip)";
+		description = "You defended it. This makes daddy proud!";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class End2
+	{
+		title = "You Suck!";
+		subtitle = "You deserved to die...";
+		description = "Enemy forces have captured our drilling rig.. and this makes me sad. :-(";
+		// pictureBackground = "";
+		// picture = "";
+		// pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+};

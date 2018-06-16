@@ -1,0 +1,1632 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"a3_map_altis",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_Soft_F_HEMTT",
+		"A3_Static_F_Mortar_01",
+		"A3_Armor_F_Slammer",
+		"A3_Characters_F_OPFOR"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_Soft_F_HEMTT",
+		"A3_Static_F_Mortar_01",
+		"A3_Armor_F_Slammer",
+		"A3_Characters_F_OPFOR",
+		"a3_map_altis"
+	};
+	randomSeed=6111989;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=25;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11327.136,16.316298,13459.438};
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11136.377,28.750481,12235.391};
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""2"", ""FORTIFY""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11143.93,29.631733,12249.327};
+					id=2;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11133.93,29.149771,12249.327};
+					id=3;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11148.93,29.600094,12244.327};
+					id=4;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11128.93,28.695543,12244.327};
+					id=5;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11153.93,29.516552,12239.327};
+					id=6;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11123.93,28.33263,12239.327};
+					id=7;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11158.93,29.383204,12234.327};
+					id=8;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11711.594,21.99543,11958.106};
+					id=9;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11690.666,23.166105,11942.361};
+					id=10;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11698.219,22.680807,11956.298};
+					id=11;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11688.219,22.932419,11956.298};
+					id=12;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11703.219,22.788485,11951.298};
+					id=13;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11683.219,23.149456,11951.298};
+					id=14;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11708.219,22.880917,11946.298};
+					id=15;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11678.219,23.286814,11946.298};
+					id=16;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11713.219,22.880938,11941.298};
+					id=17;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11600.493,23.039913,11904.875};
+					id=18;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11608.046,23.149918,11918.812};
+					id=19;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11598.046,23.320538,11918.812};
+					id=20;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11613.046,22.955034,11913.812};
+					id=21;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11593.046,23.273506,11913.812};
+					id=22;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11618.046,22.87018,11908.812};
+					id=23;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11588.046,23.172211,11908.812};
+					id=24;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11623.046,23.023508,11903.812};
+					id=25;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11729.085,23.146376,11917.86};
+					id=26;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11708.157,23.137949,11902.115};
+					id=27;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11715.71,23.152912,11916.052};
+					id=28;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11705.71,23.195229,11916.052};
+					id=29;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11720.71,23.15958,11911.052};
+					id=30;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11700.71,23.18561,11911.052};
+					id=31;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11725.71,23.159018,11906.052};
+					id=32;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11695.71,23.169399,11906.052};
+					id=33;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11730.71,23.155157,11901.052};
+					id=34;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11454.733,23.661247,11575.395};
+					id=35;
+					side="WEST";
+					vehicle="B_Heli_Light_01_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11358.297,22.656162,11459.82};
+					id=36;
+					side="WEST";
+					vehicle="B_Heli_Attack_01_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11464.795,23.57803,11590.19};
+					id=37;
+					side="WEST";
+					vehicle="B_Heli_Light_01_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""NOFOLLOW""], false]; ";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11357.826,22.424866,11440.468};
+					id=38;
+					side="WEST";
+					vehicle="B_Heli_Attack_01_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""NOFOLLOW""], false]; ";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11150.064,36.959198,11851.185};
+					id=39;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11157.617,37.672356,11865.121};
+					id=40;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11147.617,36.677025,11865.121};
+					id=41;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11162.617,38.064034,11860.121};
+					id=42;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11142.617,36.281284,11860.121};
+					id=43;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11167.617,38.340141,11855.121};
+					id=44;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11137.617,35.812641,11855.121};
+					id=45;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11172.617,39.41341,11850.121};
+					id=46;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={12454.892,7.1349244,12526.854};
+					id=47;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""3"", ""MOVE""], false]; ";
+				};
+				class Item1
+				{
+					position[]={12462.444,8.1525803,12540.79};
+					id=48;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={12452.444,7.9614372,12540.79};
+					id=49;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={12467.444,7.6161485,12535.79};
+					id=50;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={12447.444,7.4611959,12535.79};
+					id=51;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={12472.444,7.0580053,12530.79};
+					id=52;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={12442.444,7.1706791,12530.79};
+					id=53;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={12477.444,6.6794934,12525.79};
+					id=54;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11686.226,17.114908,12771.681};
+					id=55;
+					side="WEST";
+					vehicle="B_Truck_01_transport_F";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""3"", ""NOFOLLOW""], false]; ";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11059.188,33.422413,11284.755};
+					id=56;
+					side="WEST";
+					vehicle="B_Mortar_01_F";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""MOVE""], false]; ";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11059.387,35.72467,11246.263};
+					id=57;
+					side="WEST";
+					vehicle="B_Mortar_01_F";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""1"", ""NOFOLLOW""], false]; ";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10969.967,18.883751,12506.665};
+					id=58;
+					side="WEST";
+					vehicle="B_MBT_01_arty_F";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""4"", ""MOVE""], false]; ";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10969.752,18.85894,12474.796};
+					id=59;
+					side="WEST";
+					vehicle="B_MBT_01_arty_F";
+					leader=1;
+					lock="UNLOCKED";
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""GAIA_ZONE_INTEND"",[""4"", ""NOFOLLOW""], false]; ";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11333.048,16.586412,13495.467};
+					id=60;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""mcc_gaia_cache"",true, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""3"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11338.048,16.461435,13490.467};
+					id=61;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11328.048,16.685286,13490.467};
+					id=62;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11343.048,16.429045,13485.467};
+					id=63;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11323.048,16.606237,13485.467};
+					id=64;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11348.048,16.223663,13480.467};
+					id=65;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11318.048,16.750019,13480.467};
+					id=66;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11353.048,15.973491,13475.467};
+					id=67;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11825.507,15.304758,14296.081};
+					id=68;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""MCC_GAIA_RESPAWN"",20, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""5"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11830.507,15.300184,14291.081};
+					id=69;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11820.507,15.145962,14291.081};
+					id=70;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11835.507,15.401851,14286.081};
+					id=71;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11815.507,14.952778,14286.081};
+					id=72;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11840.507,15.228477,14281.081};
+					id=73;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11810.507,14.774004,14281.081};
+					id=74;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11845.507,14.538651,14276.081};
+					id=75;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11846.265,12.773097,14237.322};
+					id=76;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""MCC_GAIA_RESPAWN"",20, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""5"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11851.265,12.768118,14232.322};
+					id=77;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11841.265,12.761214,14232.322};
+					id=78;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11856.265,12.767882,14227.322};
+					id=79;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11836.265,12.740745,14227.322};
+					id=80;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11861.265,12.761215,14222.322};
+					id=81;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11831.265,12.913933,14222.322};
+					id=82;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11866.265,12.686216,14217.322};
+					id=83;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=8;
+				class Item0
+				{
+					position[]={11893.658,12.424304,14189.277};
+					id=84;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""MCC_GAIA_RESPAWN"",20, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""5"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={11898.658,12.271794,14184.277};
+					id=85;
+					side="WEST";
+					vehicle="B_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={11888.658,12.492393,14184.277};
+					id=86;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={11903.658,12.3323,14179.277};
+					id=87;
+					side="WEST";
+					vehicle="B_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={11883.658,12.435241,14179.277};
+					id=88;
+					side="WEST";
+					vehicle="B_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={11908.658,12.526242,14174.277};
+					id=89;
+					side="WEST";
+					vehicle="B_soldier_LAT_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item6
+				{
+					position[]={11878.658,12.452656,14174.277};
+					id=90;
+					side="WEST";
+					vehicle="B_medic_F";
+					skill=0.40000001;
+				};
+				class Item7
+				{
+					position[]={11913.658,12.433562,14169.277};
+					id=91;
+					side="WEST";
+					vehicle="B_soldier_A_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={12987.02,16.244247,14593.522};
+					id=92;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""MCC_GAIA_RESPAWN"",20, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""5"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={12992.02,16.375448,14588.522};
+					id=93;
+					side="EAST";
+					vehicle="O_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={12982.02,15.819788,14588.522};
+					id=94;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={12997.02,16.08272,14583.522};
+					id=95;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={12977.02,15.609862,14583.522};
+					id=96;
+					side="EAST";
+					vehicle="O_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={12972.02,15.382792,14578.522};
+					id=97;
+					side="EAST";
+					vehicle="O_medic_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={12994.303,14.986352,14570.281};
+					id=98;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""MCC_GAIA_RESPAWN"",20, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""5"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={12999.303,14.708108,14565.281};
+					id=99;
+					side="EAST";
+					vehicle="O_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={12989.303,14.873933,14565.281};
+					id=100;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={13004.303,14.568492,14560.281};
+					id=101;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={12984.303,14.662024,14560.281};
+					id=102;
+					side="EAST";
+					vehicle="O_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={12979.303,14.673779,14555.281};
+					id=103;
+					side="EAST";
+					vehicle="O_medic_F";
+					skill=0.40000001;
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={13003.113,14.134613,14552.677};
+					id=104;
+					side="EAST";
+					vehicle="O_Soldier_SL_F";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.5;
+					init="(group this) setVariable [""MCC_GAIA_RESPAWN"",20, true];  (group this) setVariable [""GAIA_ZONE_INTEND"",[""5"", ""NOFOLLOW""], false]; ";
+				};
+				class Item1
+				{
+					position[]={13008.113,13.843851,14547.677};
+					id=105;
+					side="EAST";
+					vehicle="O_soldier_TL_F";
+					rank="SERGEANT";
+					skill=0.5;
+				};
+				class Item2
+				{
+					position[]={12998.113,13.997194,14547.677};
+					id=106;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					rank="CORPORAL";
+					skill=0.44999999;
+				};
+				class Item3
+				{
+					position[]={13013.113,13.601304,14542.677};
+					id=107;
+					side="EAST";
+					vehicle="O_soldier_AR_F";
+					skill=0.40000001;
+				};
+				class Item4
+				{
+					position[]={12993.113,14.038957,14542.677};
+					id=108;
+					side="EAST";
+					vehicle="O_soldier_AAR_F";
+					skill=0.40000001;
+				};
+				class Item5
+				{
+					position[]={12988.113,14.054183,14537.677};
+					id=109;
+					side="EAST";
+					vehicle="O_medic_F";
+					skill=0.40000001;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=40;
+		class Item0
+		{
+			position[]={11140.533,29.57024,12251.662};
+			name="2";
+			text="2";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=50;
+			b=50;
+		};
+		class Item1
+		{
+			position[]={11130.769,29.946842,12288.945};
+			name="text1";
+			text="Example of Fortify command of troops in zone 2";
+			type="mil_flag";
+		};
+		class Item2
+		{
+			position[]={11635.915,23.242609,11907.885};
+			name="1";
+			text="zone 1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=200;
+			b=200;
+		};
+		class Item3
+		{
+			position[]={11532.399,24.82378,12025.016};
+			name="text1_1";
+			text="Example of Move command of troops in zone 2. ";
+			type="mil_flag";
+		};
+		class Item4
+		{
+			position[]={11533.236,23.879971,11986.482};
+			name="text1_1_1";
+			text="The troops will patrol zone 2 agressive. Means they can attack outside their zone if needed.";
+			type="mil_flag";
+		};
+		class Item5
+		{
+			position[]={11130.117,29.684282,12270.722};
+			name="text1_1_1_1";
+			text="The troops will find buildings in zone 2 and occupy it. Under attack they rarely leave buildings.";
+			type="mil_flag";
+		};
+		class Item6
+		{
+			position[]={11377.196,23.54076,11502.619};
+			name="text1_1_2";
+			text="Example of helicopter units. Helicopters will always land where you initialy placed them after an order.";
+			type="mil_flag";
+		};
+		class Item7
+		{
+			position[]={11482.483,23.49729,11590.692};
+			name="text1_1_2_1";
+			text="This helipcter has NOFOLLOW on zone 1. It will only random patrol zone 1.";
+			type="mil_flag";
+		};
+		class Item8
+		{
+			position[]={11484.29,23.344099,11563.878};
+			name="text1_1_2_1_1";
+			text="This helipcter has MOVE zone one. It will patrol all gaia controlled zones. Zone one is considered his MAIN zone. (will for sure be patrolled)";
+			type="mil_flag";
+		};
+		class Item9
+		{
+			position[]={11484.41,23.284622,11621.303};
+			name="text1_1_2_2";
+			text="Transport heli";
+			type="mil_flag";
+		};
+		class Item10
+		{
+			position[]={11376.774,17.997705,11345.697};
+			name="text1_1_2_2_1";
+			text="Attack heli";
+			type="mil_flag";
+		};
+		class Item11
+		{
+			position[]={11378.434,22.90111,11459.851};
+			name="text1_1_2_1_2";
+			text="This helicopter has MOVE on zone 1. It will CAS on ALL gaia controlled zones. Highest priority is given to the zone given, 1 in this case.";
+			type="mil_flag";
+		};
+		class Item12
+		{
+			position[]={11379.394,22.568941,11437.604};
+			name="text1_1_2_1_1_1";
+			text="This helipcter has NOFOLLOW zone one. It will do CAS orders ONLY in zone one.";
+			type="mil_flag";
+		};
+		class Item13
+		{
+			position[]={11136.539,35.738358,11889.708};
+			name="text1_1_3";
+			text="Example of Move command of troops OUTSIDE zone 2";
+			type="mil_flag";
+		};
+		class Item14
+		{
+			position[]={11122.916,33.446091,11836.863};
+			name="text1_1_3_1";
+			text="They will fast move to the zone and execute their command. ";
+			type="mil_flag";
+		};
+		class Item15
+		{
+			position[]={11122.113,32.950851,11806.438};
+			name="text1_1_3_1_1";
+			text="All works, so MOVE, NOFOLLOW and FORTIFY. On fortify they will search for buildings in zone 2 after they moved there.";
+			type="mil_flag";
+		};
+		class Item16
+		{
+			position[]={11645.837,16.374147,12775.771};
+			name="3";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=60;
+			b=60;
+		};
+		class Item17
+		{
+			position[]={12470.246,9.2661533,12560.398};
+			name="text1_1_1_1_1";
+			text="Troops far away from zone (3) will be supported by the transport system.";
+			type="mil_flag";
+		};
+		class Item18
+		{
+			position[]={11719.435,17.899538,12776.147};
+			name="text1_1_1_1_1_1";
+			text="The truck supports only zone 3, it will pickup grous far away from their zone";
+			type="mil_flag";
+		};
+		class Item19
+		{
+			position[]={11722.145,19.020439,12740.939};
+			name="text1_1_1_1_1_1_1";
+			text="If set on MOVE, it will support all zones. In this case only groups from zone 3 (Nofollow)";
+			type="mil_flag";
+		};
+		class Item20
+		{
+			position[]={11074.952,34.00362,11245.77};
+			name="text1_1_2_1_2_1";
+			text="This mortar has NOFOLLOW on zone 1. It will only mortar target area's in zone 1. (if safe)";
+			type="mil_flag";
+		};
+		class Item21
+		{
+			position[]={11075.009,31.392223,11279.823};
+			name="text1_1_2_1_1_1_1";
+			text="This mortar has MOVE. It will support mortar attacks where every gaia sees fit (and safe)";
+			type="mil_flag";
+		};
+		class Item22
+		{
+			position[]={9646.3262,33.047482,12646.24};
+			name="text1_2_1";
+			text="MARKERS are made invisible during mission time.";
+			type="mil_flag";
+			colorName="ColorRed";
+		};
+		class Item23
+		{
+			position[]={10909.847,18.25666,12473.957};
+			name="4";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=100;
+			b=100;
+		};
+		class Item24
+		{
+			position[]={10994.214,19.506371,12473.109};
+			name="text1_1_2_1_2_1_1";
+			text="This artillery has NOMOVE on zone 1. It will only ARTY target area's in zone 1. (if safe). ";
+			type="mil_flag";
+		};
+		class Item25
+		{
+			position[]={10992.366,19.093531,12502.319};
+			name="text1_1_2_1_1_1_1_1";
+			text="This ARTILLERY has MOVE. It will support artillery where ever gaia sees fit (and safe)";
+			type="mil_flag";
+		};
+		class Item26
+		{
+			position[]={10922.832,17.922237,12448.399};
+			name="text1_1_2_1_1_1_1_1_1";
+			text="Artillery tries to HIDE";
+			type="mil_flag";
+		};
+		class Item27
+		{
+			position[]={11365.89,15.597302,13493.079};
+			name="text1_1_1_1_1_1_2";
+			text="Caching example. Multiple settings can be given. In this case also patrol order.";
+			type="mil_flag";
+		};
+		class Item28
+		{
+			position[]={9647.4287,20.120352,12806.925};
+			name="text1_2_1_1";
+			text="USE IN EDITOR AND MOVE PLAYABLE UNIT TO WHAT YOU WANT TO SEE";
+			type="mil_flag";
+			colorName="ColorRed";
+		};
+		class Item29
+		{
+			position[]={9658.0088,18.227686,12732.313};
+			name="text1_2_1_2";
+			text="In editor click on MARKER editor mode. So you can see them!";
+			type="mil_flag";
+			colorName="ColorRed";
+		};
+		class Item30
+		{
+			position[]={12471.893,10.039117,14334.337};
+			name="5";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=100;
+			b=100;
+		};
+		class Item31
+		{
+			position[]={9635.209,16.06966,12560.639};
+			name="text1_2_1_3";
+			text="Markers must be named UNIQUE NUMBER (only number)";
+			type="mil_flag";
+			colorName="ColorRed";
+		};
+		class Item32
+		{
+			position[]={11701.117,18.680428,14734.47};
+			name="text1_1_1_1_1_1_2_1";
+			text="Example of respawn";
+			type="mil_flag";
+		};
+		class Item33
+		{
+			position[]={11687.816,18.367197,14641.431};
+			name="text1_1_1_1_1_1_2_1_1";
+			text="3 blue for, 3 opfor with each group 20 respawn";
+			type="mil_flag";
+		};
+		class Item34
+		{
+			position[]={11685.156,17.307335,14556.367};
+			name="text1_1_1_1_1_1_2_1_1_1";
+			text="Groups will respawn where you INITIALY placed them";
+			type="mil_flag";
+		};
+		class Item35
+		{
+			position[]={11675.133,15.829467,14469.943};
+			name="text1_1_1_1_1_1_2_1_1_1_1";
+			text="In this case they move to zone 5, probably fight and if they die respawn ";
+			type="mil_flag";
+		};
+		class Item36
+		{
+			position[]={11680.703,15.64307,14390.196};
+			name="text1_1_1_1_1_1_2_1_1_1_1_1";
+			text="Can be combined with caching";
+			type="mil_flag";
+		};
+		class Item37
+		{
+			position[]={12371.205,2.9628663,14165.791};
+			name="text1_1_1_1_1_1_2_1_1_1_1_1_1";
+			text="Can be combined with caching";
+			type="mil_flag";
+		};
+		class Item38
+		{
+			position[]={12381.559,8.3201523,14161.038};
+			name="test";
+			text="This battle might activate the CAS, artillery and mortars ";
+			type="Empty";
+		};
+		class Item39
+		{
+			position[]={11362.336,15.660728,13456.152};
+			name="text1_1_1_1_1_1_2_2";
+			text="Groups will be cached if far enough from a player. See init file for how to set that range";
+			type="mil_flag";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=11399489;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=2642907;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=13758273;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

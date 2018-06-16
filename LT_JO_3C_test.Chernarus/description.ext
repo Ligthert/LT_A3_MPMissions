@@ -1,0 +1,32 @@
+class Header
+{
+ gameType = COOP;
+ minPlayers = 1;
+ maxPlayers = 50;
+};
+
+respawn = "BASE";
+respawnDelay = 10;
+respawnDialog = false;
+disabledAI = 1;
+ShowGPS = 1;
+showCompass	= 1;
+showWatch = 1;
+aiKills = 0;
+debriefing= 1;
+author = "Sacha Ligthert";
+onLoadName = "Gebroken Vlinder";
+onLoadMission = "De grote Joint-OP tussen NL Clans + Communities";
+loadScreen = "lowtac.paa";
+forceRotorLibSimulation = 1;
+disableChannels[]={0,1,2,4,5,6};
+showUAVFeed = 0;
+
+enableDebugConsole = 1;
+
+#include "VAS\menu.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};

@@ -1,0 +1,20 @@
+;Two-channel music loop script by Celery
+;Provides smooth loop transition and independency from music volume slider (giving even pvp ground).
+
+CLY_discotrack="superslam"
+_musicsource1="HeliHEmpty" createVehicle [0,0,0]
+_musicsource2="HeliHEmpty" createVehicle [0,0,0]
+_musicsource=_musicsource2
+_duration=290
+_musicend=time-1
+
+#start
+@alive player
+?time>_musicend:if (CLY_discotrack=="superslam") then {CLY_discotrack="whatisslam"} else {CLY_discotrack="superslam"};if (_musicsource==_musicsource1) then {_musicsource=_musicsource2} else {_musicsource=_musicsource1};_musicsource say CLY_discotrack;_musicend=time+_duration
+_musicsource1 attachTo [player,[0,0,3]]
+_musicsource2 attachTo [player,[0,0,3]]
+
+#loop
+?!alive player or time>_musicend:goto "start"
+~0.1
+goto "start"

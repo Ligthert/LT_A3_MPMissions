@@ -1,0 +1,534 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_altis",
+		"ryanzombies",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"A3_Characters_F_EPC",
+		"ryanzombiesfunctions"
+	};
+	addOnsAuto[]=
+	{
+		"ryanzombies",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"A3_Characters_F_EPC",
+		"ryanzombiesfunctions",
+		"a3_map_altis"
+	};
+	randomSeed=6965486;
+	class Intel
+	{
+		briefingName="[SL] Zombie Survival (v0.1)";
+		overviewText="Inspired by DynamicZombieSandbox";
+		resistanceWest=0;
+		startFog=1;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastFog=1;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2010;
+		month=10;
+		day=11;
+		hour=17;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=8;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={46.393158,-0.13723069,52.485229};
+					id=0;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicroam";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={150.37053,0.070099525,51.427002};
+					id=1;
+					side="LOGIC";
+					vehicle="Ryanzombieslimit";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={50.877232,0.0091155171,152.0929};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="#adminLogged";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={252.43306,-0.0052005928,46.243286};
+					id=3;
+					side="LOGIC";
+					vehicle="ryanzombiescivilianattacks";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={7848.7446,230.17569,18009.713};
+					id=4;
+					side="CIV";
+					vehicle="C_man_p_fugitive_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={7846.0537,229.99388,18006.969};
+					id=5;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={7851.4351,230.14807,18006.338};
+					id=6;
+					side="CIV";
+					vehicle="C_man_hunter_1_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={7847.7017,229.87663,18003.49};
+					id=7;
+					side="CIV";
+					vehicle="C_man_pilot_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={7850.9985,229.99954,18002.988};
+					id=8;
+					side="CIV";
+					vehicle="C_scientist_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item5
+				{
+					position[]={7845.9565,229.85284,18004.693};
+					id=9;
+					side="CIV";
+					vehicle="C_man_w_worker_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={352.69513,-185.97,47.416992};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="Infection";
+						};
+						class Item1
+						{
+							value="30";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="InfectionTimer";
+						};
+						class Item2
+						{
+							value="0.9";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="Uniform";
+						};
+					};
+					id=10;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleInfection";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={446.94824,-185.97,49.246216};
+					id=11;
+					side="LOGIC";
+					vehicle="ryanzombiesdisablemoaning";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={555.25079,-185.97,49.453125};
+					class args
+					{
+						items=24;
+						class Item0
+						{
+							value="[""ItemMap"",""ItemCompass"",""ItemGPS"",""ItemWatch"",""Medikit"",""Toolkit"",""FirstAidKit"",""Binocular""]";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Items";
+						};
+						class Item1
+						{
+							value="25";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Itemschance";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Itemsamountmin";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Itemsamountmax";
+						};
+						class Item4
+						{
+							value="[""9Rnd_45ACP_Mag"",""16Rnd_9x21_Mag"",""30Rnd_9x21_Mag"",""11Rnd_45ACP_Mag"",""6Rnd_45ACP_Cylinder"",""16Rnd_9x21_Mag"",""30Rnd_9x21_Mag""]";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Magazines";
+						};
+						class Item5
+						{
+							value="25";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Magazineschance";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Magazinesamountmin";
+						};
+						class Item7
+						{
+							value="3";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Magazinesamountmax";
+						};
+						class Item8
+						{
+							value="[""hgun_ACPC2_F"",""hgun_P07_F"",""hgun_Pistol_heavy_01_F"",""hgun_Pistol_heavy_01_MRD_F"",""hgun_Pistol_heavy_02_F"",""hgun_Rook40_F""]";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Weapons";
+						};
+						class Item9
+						{
+							value="10";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Weaponschance";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Weaponsamountmin";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="Weaponsamountmax";
+						};
+						class Item12
+						{
+							value="[""ItemMap"",""ItemCompass"",""ItemGPS"",""ItemWatch"",""Medikit"",""Toolkit"",""FirstAidKit"",""Binocular"",""optic_Holosight_smg"",""optic_Holosight"",""acc_flashlight""]";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="ItemsSoldier";
+						};
+						class Item13
+						{
+							value="25";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="ItemschanceSoldier";
+						};
+						class Item14
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="ItemsamountminSoldier";
+						};
+						class Item15
+						{
+							value="2";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="ItemsamountmaxSoldier";
+						};
+						class Item16
+						{
+							value="[""9Rnd_45ACP_Mag"",""16Rnd_9x21_Mag"",""30Rnd_9x21_Mag"",""11Rnd_45ACP_Mag"",""6Rnd_45ACP_Cylinder"",""16Rnd_9x21_Mag"",""30Rnd_9x21_Mag"",""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag""]";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="MagazinesSoldier";
+						};
+						class Item17
+						{
+							value="25";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="MagazineschanceSoldier";
+						};
+						class Item18
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="MagazinesamountminSoldier";
+						};
+						class Item19
+						{
+							value="3";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="MagazinesamountmaxSoldier";
+						};
+						class Item20
+						{
+							value="[""hgun_ACPC2_F"",""hgun_P07_F"",""hgun_Pistol_heavy_01_F"",""hgun_Pistol_heavy_01_MRD_F"",""hgun_Pistol_heavy_02_F"",""hgun_Rook40_F"",""arifle_MXC_F"",""arifle_MX_F"",""arifle_MX_SW_F""]";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="WeaponsSoldier";
+						};
+						class Item21
+						{
+							value="10";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="WeaponschanceSoldier";
+						};
+						class Item22
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="WeaponsamountminSoldier";
+						};
+						class Item23
+						{
+							value="1";
+							parentCls="RyanZM_ModuleLootSettings";
+							typeName="WeaponsamountmaxSoldier";
+						};
+					};
+					id=12;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleLootSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={7848.9385,230.23558,18006.547};
+			name="respawn_civilian";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=9426215;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=5340039;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=14073308;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.25;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2008;
+		month=10;
+		day=11;
+		hour=9;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

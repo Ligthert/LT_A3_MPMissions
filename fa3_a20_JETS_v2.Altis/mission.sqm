@@ -1,0 +1,1090 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_characters_f_beta",
+		"A3_Characters_F_Civil",
+		"A3_Boat_F_Boat_Transport_01",
+		"a3_map_altis",
+		"A3_Soft_F_EPC_Truck_03",
+		"a3_uav_f_characters_f_gamma",
+		"A3_Characters_F_Bootcamp",
+		"A3_Modules_F",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Modules_F_Supports",
+		"A3_Static_F_Mortar_01",
+		"A3_Air_F_Heli_Light_01",
+		"A3_Air_F_Heli_Heli_Light_02",
+		"a3_air_f_heli_light_02",
+		"A3_Air_F_EPB_Heli_Light_03",
+		"A3_Static_F_Beta_Mortar_01",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_Gamma",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_INDEP",
+		"A3_Characters_F_EPC",
+		"A3_Data_F_Curator_Virtual",
+		"A3_Air_F_Heli_Heli_Transport_03",
+		"A3_Air_F_Heli_Heli_Transport_04",
+		"A3_Air_F_Beta_Heli_Transport_02",
+		"A3_Air_F_Beta_Heli_Transport_01",
+		"A3_Armor_F_Panther",
+		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_Armor_F_Marid",
+		"A3_Air_F_Beta_Heli_Attack_02",
+		"A3_Armor_F_EPC_MBT_01",
+		"A3_Armor_F_APC_Wheeled_03",
+		"A3_Armor_F_T100K",
+		"A3_Armor_F_EPB_MBT_03",
+		"A3_Soft_F_TruckHeavy",
+		"A3_Soft_F_MRAP_03",
+		"A3_Soft_F_MRAP_01",
+		"A3_Soft_F_HEMTT",
+		"A3_Soft_F_MRAP_02",
+		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01",
+		"A3_Soft_F_Truck",
+		"A3_Weapons_F_Beta_Ammoboxes",
+		"a3_weapons_f_ammoboxes",
+		"A3_Air_F_Heli_Heli_Light_01",
+		"A3_Armor_F_AMV",
+		"A3_armor_f_beta_APC_Tracked_02",
+		"A3_Armor_F_EPB_APC_tracked_03",
+		"A3_Modules_F_Curator_Misc",
+		"3DEN",
+		"A3_Soft_F_Gamma_HEMTT",
+		"A3_Air_F_Gamma_Plane_Fighter_03"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Modules_F_Curator_Misc",
+		"A3_Modules_F",
+		"A3_Characters_F_OPFOR",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Characters_F_EPC",
+		"A3_Data_F_Curator_Virtual",
+		"A3_Air_F_Gamma_Plane_Fighter_03",
+		"A3_Soft_F_Gamma_HEMTT",
+		"a3_map_altis"
+	};
+	randomSeed=11823142;
+	class Intel
+	{
+		briefingName="fa3_a20_Jets_v2";
+		overviewText="BLUFOR and OPFOR disagree about who has the best figher aces.";
+		resistanceWest=0;
+		startWeather=0.84999996;
+		startWind=0;
+		forecastWeather=0.84999996;
+		forecastWind=0;
+		forecastWaves=0;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=22;
+		minute=0;
+		startFogDecay=0;
+		forecastFogDecay=0;
+	};
+	class Groups
+	{
+		items=12;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={23092.799,3.1900001,17299.602};
+					azimut=-351.17499;
+					id=0;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="UnitNATO_AH1";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Squad Leader 1";
+				};
+				class Item1
+				{
+					position[]={23107.861,3.1900001,17285.182};
+					azimut=-347.991;
+					id=1;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH2";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Wingman";
+				};
+				class Item2
+				{
+					position[]={23091.564,3.1900001,17278.195};
+					azimut=-349.827;
+					id=2;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH3";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Element Leader";
+				};
+				class Item3
+				{
+					position[]={23107.223,3.1900001,17266.16};
+					azimut=-349.052;
+					id=3;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH4";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Wingman";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23756.174,3.1900001,18135.365};
+					azimut=-35.555801;
+					id=4;
+					side="LOGIC";
+					vehicle="ModuleCoverMap_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=0;
+					synchronizations[]={1};
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23746.223,3.1900001,18139.34};
+					azimut=-35.555801;
+					id=5;
+					side="LOGIC";
+					vehicle="LocationArea_F";
+					leader=1;
+					skill=0.60000002;
+					syncId=1;
+					synchronizations[]={2,0};
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={23146.693,3.1900001,17293.182};
+					azimut=-348.50601;
+					id=6;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="UnitNATO_AH5";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Squad Leader 2";
+				};
+				class Item1
+				{
+					position[]={23162.756,3.1900001,17282.582};
+					azimut=-346.897;
+					id=7;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH6";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Wingman";
+				};
+				class Item2
+				{
+					position[]={23147.387,3.1900001,17271.67};
+					azimut=-347.448;
+					id=8;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH7";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Element Leader";
+				};
+				class Item3
+				{
+					position[]={23161.619,3.1900001,17259.971};
+					azimut=-346.86499;
+					id=9;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH8";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Wingman";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={23194.602,3.1900001,17289.008};
+					azimut=-349.55899;
+					id=10;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitNATO_AH9";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Squad Leader 3";
+				};
+				class Item1
+				{
+					position[]={23210.422,3.1900001,17277.236};
+					azimut=-348.621;
+					id=11;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitNATO_AH10";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="NATO Wingman";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={23536.127,3.1900001,19250.932};
+					azimut=-168.69701;
+					id=12;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitCSAT_AH1";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Squad Leader 1";
+				};
+				class Item1
+				{
+					position[]={23554.52,3.1900001,19268.125};
+					azimut=-168.127;
+					id=13;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH2";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Wingman";
+				};
+				class Item2
+				{
+					position[]={23535.002,3.1900001,19285.656};
+					azimut=-170.85899;
+					id=14;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH3";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Element Leader";
+				};
+				class Item3
+				{
+					position[]={23547.953,3.1900001,19302.656};
+					azimut=-168.99699;
+					id=15;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH4";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Wingman";
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23839.813,3.1900001,18136.65};
+					azimut=-19.822916;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="F3_Zeus";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="2";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=16;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					init="this addEventHandler ['CuratorObjectPlaced',{{[_x] call f_fnc_setAISKill} forEach crew(_this select 1)}];this addCuratorEditableObjects [playableUnits,true];";
+				};
+			};
+		};
+		class Item7
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23653.445,3.1900001,18254.055};
+					azimut=-235.71991;
+					id=17;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					description="BBC Reporter";
+				};
+			};
+		};
+		class Item8
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={24062.789,3.1900001,17996.244};
+					azimut=-66.455605;
+					id=18;
+					side="CIV";
+					vehicle="C_journalist_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					description="CNN Reporter";
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={23821.199,3.1900001,18127.633};
+					azimut=-19.822916;
+					id=19;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="F3_Zeus";
+				};
+			};
+		};
+		class Item10
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={23601.725,3.1900001,19247.35};
+					azimut=-145.287;
+					id=20;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitCSAT_AH5";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Squad Leader 2";
+				};
+				class Item1
+				{
+					position[]={23615.438,3.1900001,19265.428};
+					azimut=-167.26801;
+					id=21;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH6";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Wingman";
+				};
+				class Item2
+				{
+					position[]={23598.252,3.1900001,19282.34};
+					azimut=-171.08;
+					id=22;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH7";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Element Leader";
+				};
+				class Item3
+				{
+					position[]={23610.83,3.1900001,19303.795};
+					azimut=-169.05701;
+					id=23;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH8";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Wingman";
+				};
+			};
+		};
+		class Item11
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={23665.102,3.1900001,19243.613};
+					azimut=-145.287;
+					id=24;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.60000002;
+					text="UnitCSAT_AH9";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Squad Leader 3";
+				};
+				class Item1
+				{
+					position[]={23674.408,3.1900001,19258.629};
+					azimut=-145.287;
+					id=25;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="UnitCSAT_AH10";
+					init="[""pcc"",this] call f_fnc_assignGear;";
+					description="CSAT Wingman";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=21;
+		class Item0
+		{
+			position[]={23096.096,3.1900001,17296.412};
+			id=26;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH1";
+			description="AAF Attack Helo 1 Pilot";
+		};
+		class Item1
+		{
+			position[]={23533.246,3.1900001,19254.26};
+			azimut=180;
+			id=27;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH1";
+		};
+		class Item2
+		{
+			position[]={23110.822,3.1900001,17281.744};
+			id=28;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH2";
+		};
+		class Item3
+		{
+			position[]={23094.975,3.1900001,17275.133};
+			id=29;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH3";
+		};
+		class Item4
+		{
+			position[]={23110.758,3.1900001,17262.102};
+			id=30;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH4";
+		};
+		class Item5
+		{
+			position[]={23150.365,3.1900001,17289.76};
+			id=31;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH5";
+		};
+		class Item6
+		{
+			position[]={23166.314,3.1900001,17279.664};
+			id=32;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH6";
+		};
+		class Item7
+		{
+			position[]={23150.979,3.1900001,17268.221};
+			id=33;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH7";
+		};
+		class Item8
+		{
+			position[]={23165.043,3.1900001,17256.842};
+			id=34;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH8";
+		};
+		class Item9
+		{
+			position[]={23198.33,3.1900001,17286.703};
+			id=35;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH9";
+		};
+		class Item10
+		{
+			position[]={23213.973,3.1900001,17274.102};
+			id=36;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehNATO_AH10";
+		};
+		class Item11
+		{
+			position[]={23550.936,3.1900001,19271.559};
+			azimut=180;
+			id=37;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH2";
+		};
+		class Item12
+		{
+			position[]={23532.262,3.1900001,19288.326};
+			azimut=180;
+			id=38;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH3";
+		};
+		class Item13
+		{
+			position[]={23544.713,3.1900001,19304.924};
+			azimut=180;
+			id=39;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH4";
+			init=";";
+		};
+		class Item14
+		{
+			position[]={23598.238,3.1900001,19250.857};
+			azimut=180;
+			id=40;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH5";
+		};
+		class Item15
+		{
+			position[]={23608.143,3.1900001,19305.795};
+			azimut=180;
+			id=41;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH8";
+		};
+		class Item16
+		{
+			position[]={23595.297,3.1900001,19285.809};
+			azimut=180;
+			id=42;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH7";
+			init="nul = [this, ""OPFOR""] execVM ""sidelight.sqf"";";
+		};
+		class Item17
+		{
+			position[]={23612.543,3.1900001,19268.084};
+			azimut=180;
+			id=43;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH6";
+			init="nul = [this, ""OPFOR""] execVM ""sidelight.sqf"";";
+		};
+		class Item18
+		{
+			position[]={23660.408,3.1900001,19247.672};
+			azimut=180;
+			id=44;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH9";
+			init="nul = [this, ""OPFOR""] execVM ""sidelight.sqf"";";
+		};
+		class Item19
+		{
+			position[]={23668.971,3.1900001,19263.33};
+			azimut=180;
+			id=45;
+			side="EMPTY";
+			vehicle="I_Plane_Fighter_03_AA_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehCSAT_AH10";
+		};
+		class Item20
+		{
+			position[]={23790.713,3.1900001,18141.775};
+			azimut=-19.822901;
+			id=46;
+			side="EMPTY";
+			vehicle="B_Truck_01_ammo_F";
+			skill=0.60000002;
+			init="this addEventHandler [""HandleDamage"", {false}]; nul = [this, ""YELLOW""] execVM ""sidelight.sqf"";";
+		};
+	};
+	class Markers
+	{
+		items=8;
+		class Item0
+		{
+			position[]={27798.664,0,15503.766};
+			name="DEATH_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Grid";
+			a=6600;
+			b=100;
+			angle=-55;
+		};
+		class Item1
+		{
+			position[]={20134.402,122.67819,12934.452};
+			name="DEATH_1_1_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Grid";
+			a=4700;
+			b=100;
+			angle=35;
+		};
+		class Item2
+		{
+			position[]={23143.361,3.1900001,17308.682};
+			name="nato";
+			type="flag_NATO";
+			a=2;
+			b=2;
+		};
+		class Item3
+		{
+			position[]={23635.08,3.1900001,19309.549};
+			name="csat";
+			type="flag_CSAT";
+			a=2;
+			b=2;
+		};
+		class Item4
+		{
+			position[]={23790.328,3.1900001,18141.389};
+			name="rearm";
+			text="Rearm";
+			type="respawn_unknown";
+			a=0.75;
+			b=0.75;
+		};
+		class Item5
+		{
+			position[]={19930.363,0,21015.246};
+			name="DEATH_1_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Grid";
+			a=6600;
+			b=100;
+			angle=-55;
+		};
+		class Item6
+		{
+			position[]={27592.391,8.4367361,23587.65};
+			name="DEATH_1_1_1_1";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="Grid";
+			a=4700;
+			b=100;
+			angle=34.985001;
+		};
+		class Item7
+		{
+			position[]={21848.475,22.217871,17241.514};
+			name="corner";
+			type="Empty";
+		};
+	};
+	class Sensors
+	{
+		items=7;
+		class Item0
+		{
+			position[]={27797.545,0,15502.398};
+			a=6600;
+			b=100;
+			angle=-55;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{_x setDamage 1} forEach thisList;";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={20134.68,122.60609,12933.968};
+			a=4700;
+			b=100;
+			angle=35;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{_x setDamage 1} forEach thisList;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={23745.537,3.1900001,18126.775};
+			a=6300;
+			b=4600;
+			angle=-55.014702;
+			rectangular=1;
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+			};
+			synchronizations[]={1};
+			syncId=2;
+		};
+		class Item3
+		{
+			position[]={19929.188,0,21013.926};
+			a=6600;
+			b=100;
+			angle=-55;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{_x setDamage 1} forEach thisList;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={27593.84,8.4187231,23590.166};
+			a=4700;
+			b=100;
+			angle=35;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="{_x setDamage 1} forEach thisList;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={23723.09,3.1900001,18181.508};
+			a=4400;
+			b=3600;
+			angle=-55.014702;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="!(vehicle player in thisList);";
+			expActiv="if (alive player) then {[""ALERT"",[""APPROACHING COMPETITION BOUNDRIES""]] call BIS_fnc_showNotification;}";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={23671.578,3.1900001,18169.75};
+			a=5500;
+			b=4000;
+			angle=-55.014702;
+			rectangular=1;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expCond="!(vehicle player in thisList);";
+			expActiv="if (alive player) then {[""ALERT"",[""TURN BACK NOW!""]] call BIS_fnc_showNotification;}";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=8428644;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=4674277;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=6586695;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=14;
+		minute=15;
+		startFogDecay=0.0049333;
+		forecastFogDecay=0.0049333;
+	};
+};

@@ -1,0 +1,74 @@
+class Header
+{
+	 gameType = COOP;
+	 minPlayers = 1;
+	 maxPlayers = 12;
+};
+
+respawn = "BASE";
+respawnDelay = 15;
+respawnDialog = true;
+disabledAI = 1;
+ShowGPS = 1;
+showCompass = 1;
+showWatch = 1;
+aiKills = 0;
+debriefing = 1;
+author = "Sacha Ligthert @ Lowlands Tactical";
+onLoadName = "Spec-Ops";
+onLoadMission = "Dynamic Spec-Ops-esque Missions on Altis for smaller groups.";
+loadScreen = "SPECOP.jpg";
+
+enableDebugConsole = 1;
+
+class Params
+{
+	class scen_starttime
+	{
+		title = "Starting Time:";
+		values[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24};
+		default = 1;
+		texts[] = {"1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "24:00"};
+	};
+	class scen_objectives
+	{
+		title = "------------------------------------------------------------------------";
+		values[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30};
+		default = 5;
+	};
+	class obj_assassinate_defectors
+	{
+		title = "Objective: Assassinations (CQB)";
+		values[] = {1,0};
+		default = 1;
+		texts[] = {"Yes","No"};
+	};
+	class obj_destroy
+	{
+		title = "Objective: Destruction of strategic objects";
+		values[] = {1,0};
+		default = 1;
+		texts[] = {"Yes","No"};
+	};
+	class obj_assassinate_snipe
+	{
+		title = "Objective: Assassinations (snipe)";
+		values[] = {1,0};
+		default = 1;
+		texts[] = {"Yes","No"};
+	};
+	class obj_extract_data
+	{
+		title = "Objective: Extract Data (WIP)";
+		values[] = {1,0};
+		default = 0;
+		texts[] = {"Yes","No"};
+	};
+	class obj_secure_compounds
+	{
+		title = "Objective: Secure compounds (WIP)";
+		values[] = {1,0};
+		default = 1;
+		texts[] = {"Yes","No"};
+	};
+};

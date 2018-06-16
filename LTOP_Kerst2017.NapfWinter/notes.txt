@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------
+// this forceFlagTexture "\lt_template_base\logos\lowtac-banner.paa"
+
+[radio1,["cky",500,1]] remoteExec ["say3D"];
+
+rec = [myDrone2,30,20] spawn BIS_fnc_UnitCapture;
+
+null = execVM "unitCaptures\myDrone1.sqf";
+null = execVM "unitCaptures\myDrone2.sqf";
+
+nul = [1+random 1] execvm "ALfallstar\alias_fallingstar_ini.sqf";
+nul = [10] execvm "ALfallstar\alias_meteor_ini.sqf";
+
+cutText ["<t size='2' color='#FF0000' >Euh... Overigens, vanaf hier staan jullie er eigenlijk een beetje (boel) alleen voor. Good luck!</t><br/><t size='2'>Afzender: De Enige Echte Kerstman</t><br/><br/>PS: Het kan zijn dat dingen een beetje dodgy worden vanaf hier. Demonen enzo. Ik ben nooit verder gekomen dan dit eigenlijk. Nou ja, de vorige batch huurlingen. Als het enige troost is, de vorige waren nog nooit zover gekomen! :D","PLAIN",0,true,true];
+
+cutText ["<t size='2' color='#FF0000'></t><br/><t size='2'>Afzender: De Enige Echte Kerstman</t>","PLAIN",0,true,true];
+
+["video\sponsored.ogv"] call BIS_fnc_playVideo;
+
+player setUnitRecoilCoefficient 0;
+
+-------------------------------------------------------------------------------

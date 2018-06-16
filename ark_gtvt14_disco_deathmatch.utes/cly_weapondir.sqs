@@ -1,0 +1,8 @@
+;Weapon direction update script to augment the accuracy boost script
+
+?!(CLY_boost select 0):exit
+
+#loop
+CLY_weapondir=player weaponDirection currentWeapon player
+~0.02
+goto "loop"

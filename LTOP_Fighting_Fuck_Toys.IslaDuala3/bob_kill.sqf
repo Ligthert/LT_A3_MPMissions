@@ -1,0 +1,2 @@
+selectPlayer oco;
+deleteVehicle bob;

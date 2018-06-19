@@ -34,9 +34,11 @@ if (!isDedicated && player != player) then { waitUntil {player == player && time
 // Place Mission Specific commands in this file.
 #include "init-custom.sqf"
 
+// Fuck spelers. ;-)
+SL_AI_ABILITY = 0.9;
+SL_AI_AIMACC = 0.45;
+SL_AI_SPOTDIST = 0.9;
+SL_AI_SPOTTIME = 0.9;
 
-// bob = (group player) createUnit ["O_CUPAFRReb_Rifleman_01", screenToWorld[0,0], [], 0, "CAN_COLLIDE"];
-// selectPlayer bob;
-// Magic happens here
-// selectPlayer oco;
-// deleteVehicle bob;
+["ace_captives_setSurrendered",[hossie,true]] call CBA_fnc_globalEvent;
+// [objNull, player] call ace_medical_fnc_treatmentAdvanced_fullHealLocal;

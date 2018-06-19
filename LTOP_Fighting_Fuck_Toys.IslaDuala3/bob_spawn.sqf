@@ -9,7 +9,7 @@ _near = false;
 if (_near) exitWith {hint "Near players. Not possible."};
 
 // Spawn the unit and move into it
-bob = (group player) createUnit ["O_CUPAFRReb_Rifleman_01", _pos, [], 0, "CAN_COLLIDE"];
+bob = (group player) createUnit ["O_CUPAFRReb_Rifleman_AT_01", _pos, [], 0, "CAN_COLLIDE"];
 selectPlayer bob;
 
 // Add the option to kill yourself.

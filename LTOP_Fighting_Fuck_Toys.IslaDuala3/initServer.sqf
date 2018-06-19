@@ -3,3 +3,4 @@
 null = execVM "\lt_template_base\init\initServer.sqf";
 
 null = execVM "updateOPFOR.sqf";
+null = execVM "music_zymosiz.sqf";

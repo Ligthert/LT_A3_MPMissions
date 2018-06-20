@@ -36,7 +36,7 @@ if (!isDedicated && player != player) then { waitUntil {player == player && time
 
 // Fuck spelers. ;-)
 SL_AI_ABILITY = 0.9;
-SL_AI_AIMACC = 0.45;
+SL_AI_AIMACC = 0.35;
 SL_AI_SPOTDIST = 0.9;
 SL_AI_SPOTTIME = 0.9;
 

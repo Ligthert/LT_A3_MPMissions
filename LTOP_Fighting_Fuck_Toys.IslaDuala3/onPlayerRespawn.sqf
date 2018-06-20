@@ -7,6 +7,6 @@ null = execVM "\lt_template_base\init\common.sqf";
 null = execVM "\lt_template_base\init\onPlayerRespawn.sqf";
 
 // Parachute new players in :)
-_chute = "NonSteerable_Parachute_F" createVehicle [0,0,200];
+_chute = "Steerable_Parachute_F" createVehicle [0,0,200];
 _chute setPos [getPos player select 0, getPos player select 1, 200];
 player moveIndriver _chute;

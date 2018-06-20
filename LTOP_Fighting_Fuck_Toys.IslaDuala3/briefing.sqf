@@ -13,6 +13,7 @@ De taken zijn simpel:<br/>
 * <marker name='obj2'>Herover deze kleine airfield</marker>: Om de distributie van voedsel en porno te bevorderen ( en misschien wapens en munitie ) is dit airfieldje wel handig. Neem deze in... voor hentai weebshit.<br/>
 * <marker name='obj3'>Vind een drugslab</marker>: Het vermoeden is dat er een drugslab en plantage is in deze contreien, controlleer de nabijgelegen gebouwen voor een lab en markeer deze voor latere vernietiging.<br/>
 * <marker name='obj4'>Bevrijd een journalist</marker>: Deze stakker vond het nodig om naar schubbekutteveen in sint-fuckistan gaan om inspiratie op te doen voor een magazine over Lesbische Dans-therapie. Zorg dat ie bevrijd wordt en vertel hem dat er een boot is ten ooste van de gevangenis die op hem wacht om hem weer naar zijn socialistische dystopie te brengen.<br/>
+* <marker name='obj5'>Herover dit TV station</marker: Stop dit propaganda arm van de rebellen door de bezem eens fijn door dit TV station heen te halen. Misschien stoppen ze een keer de hele tijd met 'We Wuz Kangz' uit te zenden.<br/>
 <br/>
 Verder zijn er secundaire opgaven:<br/>
 - Zuiver de steden van rebellen<br/>

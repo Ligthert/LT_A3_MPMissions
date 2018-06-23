@@ -14,14 +14,16 @@ waitUntil {lt_param_timer <= 0};
 "obj1" setMarkerPos (getMarkerPos _comm);
 
 // Execute globally
-[_jump] remoteExec ["action_client.sqf",0,false];
+// [_jump] remoteExec ["action_client.sqf",0,false];
 
 // Execute on everything but the server
 // [_jump] remoteExec ["action_client.sqf",-2,false];
 
 // When server player
-if (isServer and hasInterface) then { [_jump] execVM "action_client.sqf"; };
+// if (isServer and hasInterface) then { [_jump] execVM "action_client.sqf"; };
 
+// fuck this shit
+[[[_jump],"action_client.sqf"],"BIS_fnc_execVM",true,false] call BIS_fnc_MP;
 
 sleep 1;
 

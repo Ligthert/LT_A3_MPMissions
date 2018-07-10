@@ -23,8 +23,6 @@ null = execVM "briefing.sqf";
 
 // MAKE SURE THE PLAYER INITIALIZES PROPERLY
 if (!isDedicated && player != player) then { waitUntil {player == player && time > 0.3}; } else { waitUntil {time > 0.3}; };
-// Shove the player in the cargo plane
-player moveInCargo plane1;
 
 // Set Camo, Gear and TFR. And in this order!
 #include "\lt_template_base\gear\setCamo.sqf"
@@ -38,8 +36,3 @@ player moveInCargo plane1;
 
 // Place Mission Specific commands in this file.
 #include "init-custom.sqf"
-
-[true,"task1",["Time to go home boys!","Go home!","Go Home"],[6000000,6000000,0],"CREATED",0] call BIS_fnc_taskCreate;
-
-// Shove the player in the cargo plane
-player moveInCargo plane1;

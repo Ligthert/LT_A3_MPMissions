@@ -1,5 +1,10 @@
 private ["_jump","_pos","_chute"];
 
+player allowdamage false;
+MoveOut player;
+waituntil {(getpos player select 2) < 200};
+player allowDamage true;
+
 _jump = _this select 0;
 _pos = (getMarkerPos _jump) getPos [random 100, random 360];
 player setPos [_pos select 0, _pos select 1, 200];

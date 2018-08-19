@@ -1,0 +1,10 @@
+Score betere wapens
+Score brandstof
+Score voertuigen
+Score beter voertuigen
+Score meer brandstof
+
+{ if ( _x in primaryWeaponMagazine player ) then { _soldier removeMagazine _x } } forEach magazines player;
+player removeWeapon (primaryWeapon player);
+
+player setAmmo [currentWeapon player, 0];

@@ -32,3 +32,6 @@ if (!isDedicated && player != player) then { waitUntil {player == player && time
 #include "init-custom.sqf"
 
 execVM "\lt_template_base\scripts\QS_icons.sqf";
+
+["ace_captives_setSurrendered",[hossie1,true]] call CBA_fnc_globalEvent;
+["ace_captives_setSurrendered",[hossie2,true]] call CBA_fnc_globalEvent;

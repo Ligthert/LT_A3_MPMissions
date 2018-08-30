@@ -31,3 +31,8 @@ Omdat het ergens anders moeten wij er naar toe lopen.<br/>
 // <font size='18'>FRIENDLY FORCES</font><br/>
 // *** Insert information about friendly forces here.***
 // "]];
+
+
+if (player == basl) then {
+  _respawn = player createDiaryRecord ["diary", ["Update respawn","<execute expression=""'respawn_guerrila' setMarkerPos (getPos player);"">Move Respawn to my Pos</execute>."]];
+};

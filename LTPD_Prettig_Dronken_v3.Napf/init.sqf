@@ -35,3 +35,10 @@ if (!isDedicated && player != player) then { waitUntil {player == player && time
 #include "init-custom.sqf"
 
 player addItemToVest "ACE_Fortify";
+
+if (isServer) then {
+  [west, 25 * (count allPlayers), [["Land_BagFence_01_Long_green_F", 5], ["Land_BagBunker_01_Small_green_F", 15], ["Land_BagBunker_01_large_green_F",30], ["CUP_B_ZU23_CDF",60] ]] call acex_fortify_fnc_registerObjects;
+  missionNamespace setVariable ["acex_fortify_fortifyAllowed", true, true];
+  heli1 setFuel 0;
+  heli2 setFuel 0;
+};

@@ -7,6 +7,7 @@ _target = _this select 1;
 
 _unit dotarget _target;
 sleep 2;
+_target setCaptive false;
 while {alive _unit} do {
   sleep 0.3;
   _unit setUnitPos "UP";

@@ -33,7 +33,6 @@ if (!isDedicated && player != player) then { waitUntil {player == player && time
 
 // ["ACE_captives_setSurrendered", [_unit, true], _unit] call CBA_fnc_targetEvent;
 // [hostage1, true] call ACE_captives_fnc_setHandcuffed;
-execVM "\lt_template_base\scripts\QS_icons.sqf";
 
 // This will kill players:
 SL_AI_ABILITY = 0.9;

@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1153;
 	class ItemIDProvider
 	{
-		nextID=1120;
+		nextID=1121;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6;
+		nextID=8;
 	};
 	class Camera
 	{
-		pos[]={5060.3945,599.08734,9307.4609};
-		dir[]={0.75304264,-0.65223116,-0.087169684};
-		up[]={0.64790052,0.75801897,-0.074998789};
-		aside[]={-0.11499323,9.8381861e-007,-0.99340212};
+		pos[]={6292.0171,127.12881,10851.572};
+		dir[]={-0.59081715,-0.63852537,0.49327663};
+		up[]={-0.49015006,0.76959169,0.40923104};
+		aside[]={0.64093053,1.8231076e-006,0.76766306};
 	};
 };
 binarizationWanted=0;
@@ -635,7 +635,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="[LT-OP]  Tour de Force (v1)";
+		briefingName="[LT-OP]  Tour de Force (v2)";
 		overviewText="Slot ASL";
 		resistanceWest=0;
 		timeOfChanges=7200;
@@ -651,12 +651,13 @@ class Mission
 		month=10;
 		day=19;
 		hour=16;
+		minute=-30;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Entities
 	{
-		items=86;
+		items=87;
 		class Item0
 		{
 			dataType="Trigger";
@@ -16169,6 +16170,25 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Corporaal Schijtstraal";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="LT_role_combo_ID";
 							expression="_this setVariable ['LT_unit_role',_value,true];";
 							class Value
@@ -16186,7 +16206,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						nAttributes=4;
 					};
 				};
 			};
@@ -17201,6 +17221,21 @@ class Mission
 				};
 				nAttributes=14;
 			};
+		};
+		class Item86
+		{
+			dataType="Trigger";
+			position[]={6280.2568,115.97328,10861.535};
+			class Attributes
+			{
+				condition="call{this}";
+				onActivation="call{[pilot] joinSilent (group basl)}";
+				sizeA=5;
+				sizeB=5;
+				activationBy="ANYPLAYER";
+			};
+			id=1120;
+			type="EmptyDetectorAreaR50";
 		};
 	};
 	class Connections

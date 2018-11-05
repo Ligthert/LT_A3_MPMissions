@@ -33,3 +33,5 @@ null = execVM "briefing.sqf";
 
 // Place Mission Specific commands in this file.
 #include "init-custom.sqf"
+
+execVM "\lt_template_base\scripts\QS_icons.sqf";

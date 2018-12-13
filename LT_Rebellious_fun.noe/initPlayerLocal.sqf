@@ -2,3 +2,5 @@
 
 // initPlayerLocal.sqf specific script.
 null = execVM "\lt_template_base\init\initPlayerLocal.sqf";
+
+execVM "\lt_template_base\scripts\QS_icons.sqf";

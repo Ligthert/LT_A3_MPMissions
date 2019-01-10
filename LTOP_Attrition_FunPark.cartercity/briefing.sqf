@@ -7,7 +7,7 @@ null = execVM "\lt_template_base\briefing\checklist.sqf";
 //// Uncomment the following lines if you don't want to make use of the modules.
 
 _adm = player createDiaryRecord ["diary", ["Admin Notes","<br/>
-The variable 'SPAWNDELAY' (set to 180) is the delay in seconds that spawns a new group and sends it to the most northern user. Getting smashed? Make the value higher. Going to fast? Lower it."]];
+The variable 'SPAWNDELAY' (set to 120) is the delay in seconds that spawns a new group and sends it to the most northern user. Getting smashed? Make the value higher. Going to fast? Lower it."]];
 
 _mis = player createDiaryRecord ["diary", ["Mission","<br/>
 - Clean out <marker name='obj1'>the railyard</marker>. Resistance will be fierce and you will suffer many casualties. (Good luck, don't die)<br/>

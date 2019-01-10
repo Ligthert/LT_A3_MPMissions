@@ -4,3 +4,4 @@
 null = execVM "\lt_template_base\init\initPlayerLocal.sqf";
 
 null = execVM "scripts\checkPlayer.sqf";
+null = execVM "scripts\fixFog.sqf";
